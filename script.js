@@ -1,10 +1,3 @@
-/* 
-    TO-DO: 
-        element within array will change randomly
-        display all 3 messages together in a log to console
-*/
-
-
 // Object stores 3 arrays containing 5 random hobbies, animes, locations
 const randomMessage = {
     hobbies: ['coding', 'video games', 'golfing', 'stocks', 'fitness'],
@@ -81,6 +74,7 @@ const randomMessage = {
 };
 
 
+/* Testing with 10, 100, 1000, 10000 calls */
 // console.time('loopTime');
 
 // for (let i = 0; i < 10000; i++) {
