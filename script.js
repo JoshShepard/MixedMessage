@@ -81,10 +81,10 @@ const randomMessage = {
 };
 
 
-console.time('loopTime');
+// console.time('loopTime');
 
-for (let i = 0; i < 10000; i++) {
-    randomMessage.generateMessage();
-}
+// for (let i = 0; i < 10000; i++) {
+//     randomMessage.generateMessage();
+// }
 
-console.timeEnd('loopTime');
+// console.timeEnd('loopTime');
