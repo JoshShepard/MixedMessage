@@ -66,5 +66,25 @@ const randomMessage = {
         } else {
             console.log(`Error: ${location} is not found in list`);
         }
+    },
+    
+    // Generate random message
+    generateMessage() {
+        // Placeholders for random words in message
+        const randomHobby = this.hobbies[Math.floor(Math.random() * 5)];
+        const randomAnime = this.animes[Math.floor(Math.random() * 5)];
+        const randomLocation = this.locations[Math.floor(Math.random() * 5)];
+
+        // Generate random strings
+        console.log(`The next hobby you should learn is ${randomHobby}. While you're taking a break from your hobby, relax by watching ${randomAnime}. Before the year ends visit ${randomLocation}!`);
     }
 };
+
+
+console.time('loopTime');
+
+for (let i = 0; i < 10000; i++) {
+    randomMessage.generateMessage();
+}
+
+console.timeEnd('loopTime');
